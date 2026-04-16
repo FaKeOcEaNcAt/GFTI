@@ -11,7 +11,7 @@
     <div class="wrap center-panel">
       <span class="eyebrow">Girls' Frontline Type Indicator</span>
       <h1>测出你像哪个《少女前线》人形</h1>
-      <p class="lead">完成全部 28 题，获得你的 GFTI 四码、七维人格评分，以及最接近的人形匹配结果。</p>
+      <p class="lead">完成全部 28 题，获得你的 GFTI 四位标签、七维人格评分，以及最接近的人形匹配结果。</p>
       <div class="hero-actions">
         <a class="button" href="./index.html">返回 GFTI 资料页</a>
       </div>
@@ -24,7 +24,7 @@
       <p class="summary">这是一份同人向人格匹配测评。结果更适合拿来做角色讨论、同人创作和社交分享，不代表官方设定。</p>
       <div class="grid intro-grid">
         <article class="card"><h3>题量</h3><p>28 题，约 3–5 分钟。</p></article>
-        <article class="card"><h3>结果</h3><p>输出 1 位主匹配人形、3 位相近人形、1 组 GFTI 四码和七维评分。</p></article>
+        <article class="card"><h3>结果</h3><p>输出 1 位主匹配人形、3 位相近人形、1 组 GFTI 四位标签和七维评分。</p></article>
         <article class="card"><h3>风格</h3><p>题面更贴近《少女前线》的行动气质与人物关系，但不会直接点出剧情名场面。</p></article>
       </div>
       <div class="hero-actions">
@@ -67,6 +67,7 @@
         <article class="card">
           <h3>人格解读</h3>
           <p id="profileText" class="summary"></p>
+          <p id="resultWarning" class="result-warning" hidden></p>
           <h3 style="margin-top:16px">相近人形</h3>
           <div id="topMatches" class="top-matches"></div>
           <details style="margin-top:16px">
@@ -75,11 +76,12 @@
           </details>
           <details style="margin-top:16px">
             <summary>导出说明</summary>
-            <p class="summary">导出的是本地 JSON 文件，包含你的答案、七维分数、GFTI 四码与匹配结果。之后可以再次导入恢复结果页。</p>
+            <p class="summary">导出的是本地 JSON 答题记录，只包含你的选项顺序。之后再次导入时，会按当前版本的算法和数据重新计算结果。</p>
           </details>
         </article>
       </div>
       <div class="hero-actions">
+        <button id="downloadImageBtn" class="button secondary">下载分析结果</button>
         <button id="exportBtn" class="button">导出 JSON 结果</button>
         <button id="retryBtn" class="button secondary">重新测试</button>
         <button id="importBtnResult" class="button secondary">导入 JSON</button>
@@ -93,6 +95,7 @@
 
   <script src="./data/popular.js"></script>
   <script src="./data/test-data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
   <script src="./test-app.js"></script>
 </body>
 </html>

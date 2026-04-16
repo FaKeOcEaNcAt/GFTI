@@ -34,6 +34,7 @@ const GFTI_SOURCE_REGISTRY = {
 
 const dims = ["command","reserve","discipline","adaptation","warmth","teamTrust","volatility"];
 const dimLabel = {command:"指挥", reserve:"保留", discipline:"纪律", adaptation:"适应", warmth:"温度", teamTrust:"队信", volatility:"波动"};
+const SCORING_ALPHA = 1.6;
 const introView = document.getElementById("introView");
 const quizView = document.getElementById("quizView");
 const resultView = document.getElementById("resultView");
@@ -41,6 +42,7 @@ const startBtn = document.getElementById("startBtn");
 const prevBtn = document.getElementById("prevBtn");
 const retryBtn = document.getElementById("retryBtn");
 const exportBtn = document.getElementById("exportBtn");
+const downloadImageBtn = document.getElementById("downloadImageBtn");
 const importBtn = document.getElementById("importBtn");
 const importBtnResult = document.getElementById("importBtnResult");
 const importInput = document.getElementById("importInput");
@@ -48,10 +50,13 @@ const questionText = document.getElementById("questionText");
 const optionList = document.getElementById("optionList");
 const progressText = document.getElementById("progressText");
 const progressBar = document.getElementById("progressBar");
+const resultWarning = document.getElementById("resultWarning");
 
 let current = 0;
 let answers = [];
 let latestResult = null;
+
+const SCORING_MODEL = buildScoringModel();
 
 function replayAnimation(node, className) {
   if (!node) return;
@@ -62,6 +67,113 @@ function replayAnimation(node, className) {
 
 function defaultScore(){ return {command:50,reserve:50,discipline:50,adaptation:50,warmth:50,teamTrust:50,volatility:50}; }
 function clamp(v){ return Math.max(0, Math.min(100, Math.round(v))); }
+function clampUnit(v){ return Math.max(0, Math.min(1, v)); }
+function buildScoringModel(){
+  const poolStats = {};
+  dims.forEach((dim) => {
+    const values = GFTI_MATCH_POOL.map((item) => item.scores?.[dim] ?? 50);
+    const mean = values.reduce((sum, value) => sum + value, 0) / values.length;
+    const variance = values.reduce((sum, value) => sum + Math.pow(value - mean, 2), 0) / values.length;
+    poolStats[dim] = {
+      mean,
+      sd: Math.sqrt(variance) || 1
+    };
+  });
+
+  const centeredQuestions = GFTI_TEST_QUESTIONS.map((question) => {
+    const means = {};
+    dims.forEach((dim) => {
+      means[dim] = question.options.reduce((sum, option) => sum + (option[1][dim] || 0), 0) / question.options.length;
+    });
+    return question.options.map((option) => {
+      const centered = {};
+      dims.forEach((dim) => {
+        centered[dim] = (option[1][dim] || 0) - means[dim];
+      });
+      return centered;
+    });
+  });
+
+  const possibleRange = {};
+  dims.forEach((dim) => {
+    possibleRange[dim] = { min: 0, max: 0, maxAbs: 1 };
+  });
+  centeredQuestions.forEach((options) => {
+    dims.forEach((dim) => {
+      const values = options.map((option) => option[dim]);
+      possibleRange[dim].min += Math.min(...values);
+      possibleRange[dim].max += Math.max(...values);
+    });
+  });
+  dims.forEach((dim) => {
+    possibleRange[dim].maxAbs = Math.max(Math.abs(possibleRange[dim].min), Math.abs(possibleRange[dim].max)) || 1;
+  });
+
+  return { poolStats, centeredQuestions, possibleRange };
+}
+function summarizeAnswerPattern(answerSnapshot){
+  const optionCounts = [0, 0, 0, 0];
+  let longestStreak = 0;
+  let currentStreak = 0;
+  let previous = null;
+  answerSnapshot.forEach((answer) => {
+    if (answer === undefined) return;
+    optionCounts[answer] = (optionCounts[answer] || 0) + 1;
+    if (answer === previous) currentStreak += 1;
+    else currentStreak = 1;
+    longestStreak = Math.max(longestStreak, currentStreak);
+    previous = answer;
+  });
+  const answeredCount = answerSnapshot.filter((answer) => answer !== undefined).length;
+  const dominantShare = answeredCount ? Math.max(...optionCounts) / answeredCount : 0;
+  const uniqueOptions = optionCounts.filter((count) => count > 0).length;
+  return { answeredCount, optionCounts, dominantShare, uniqueOptions, longestStreak };
+}
+function calcScoreDetails(answerSnapshot = answers){
+  const raw = Object.fromEntries(dims.map((dim) => [dim, 0]));
+  answerSnapshot.forEach((answer, questionIndex) => {
+    if (answer === undefined) return;
+    const optionScore = SCORING_MODEL.centeredQuestions[questionIndex]?.[answer];
+    if (!optionScore) return;
+    dims.forEach((dim) => {
+      raw[dim] += optionScore[dim];
+    });
+  });
+
+  const normalized = {};
+  const score = {};
+  dims.forEach((dim) => {
+    const norm = raw[dim] / SCORING_MODEL.possibleRange[dim].maxAbs;
+    normalized[dim] = Math.max(-1, Math.min(1, norm));
+    const projected = SCORING_MODEL.poolStats[dim].mean + normalized[dim] * SCORING_MODEL.poolStats[dim].sd * SCORING_ALPHA;
+    score[dim] = clamp(projected);
+  });
+
+  return { score, normalized, answerPattern: summarizeAnswerPattern(answerSnapshot) };
+}
+function evaluateResultQuality(score, normalized, ranked, answerPattern){
+  const absStrength = dims.reduce((sum, dim) => sum + Math.abs(normalized[dim] || 0), 0) / dims.length;
+  const scoreValues = dims.map((dim) => score[dim]);
+  const mean = scoreValues.reduce((sum, value) => sum + value, 0) / scoreValues.length;
+  const spread = Math.sqrt(scoreValues.reduce((sum, value) => sum + Math.pow(value - mean, 2), 0) / scoreValues.length);
+  const spreadScore = clampUnit(spread / 18);
+  const topGap = ranked[1] ? ranked[1].distance - ranked[0].distance : 12;
+  const gapScore = clampUnit(topGap / 10);
+  const patternPenalty =
+    (answerPattern.dominantShare > 0.82 ? 0.18 : 0) +
+    (answerPattern.longestStreak >= 9 ? 0.15 : 0) +
+    (answerPattern.uniqueOptions <= 2 ? 0.12 : 0);
+  const confidence = clamp((absStrength * 0.45 + spreadScore * 0.25 + gapScore * 0.30 - patternPenalty) * 100);
+  const warning =
+    answerPattern.dominantShare >= 0.86 ||
+    answerPattern.longestStreak >= 11 ||
+    (answerPattern.uniqueOptions <= 2 && answerPattern.dominantShare >= 0.72) ||
+    (confidence < 18 && (answerPattern.dominantShare >= 0.72 || answerPattern.longestStreak >= 8));
+  const message = warning
+    ? "这次答题路径明显偏单一，可能存在连续按同一路径作答的情况。想获得更准确的分析结果，建议按第一反应认真完成测试。"
+    : "";
+  return { confidence, warning, message };
+}
 function scoreToCode(s){
   const a = s.command >= 67 ? 'C' : s.reserve >= 67 ? 'R' : s.volatility >= 67 ? 'F' : 'O';
   const b = s.discipline >= 67 ? 'D' : s.adaptation >= 67 ? 'A' : s.reserve >= 74 ? 'R' : 'V';
@@ -105,16 +217,6 @@ function renderQuestion(){
   replayAnimation(optionList, 'quiz-options-enter');
   prevBtn.style.visibility = current === 0 ? 'hidden' : 'visible';
 }
-function calcScore(){
-  const score = defaultScore();
-  GFTI_TEST_QUESTIONS.forEach((q, i) => {
-    const ans = answers[i];
-    if (ans === undefined) return;
-    const delta = q.options[ans][1];
-    Object.entries(delta).forEach(([k,v]) => score[k] = clamp(score[k] + v * 8));
-  });
-  return score;
-}
 function distance(a,b){
   let sum = 0;
   dims.forEach(k => { sum += Math.pow((a[k] ?? 50) - (b[k] ?? 50), 2); });
@@ -128,7 +230,7 @@ function renderScores(target, s){
 function rankMatches(score){
   return GFTI_MATCH_POOL.map(item => ({...item, distance: distance(score, item.scores)})).sort((a,b)=>a.distance-b.distance);
 }
-function buildResultPayload(score, ranked, answersSnapshot){
+function buildResultPayload(score, ranked, answersSnapshot, quality){
   const code = scoreToCode(score);
   const best = ranked[0];
   return {
@@ -138,6 +240,7 @@ function buildResultPayload(score, ranked, answersSnapshot){
     answers: answersSnapshot,
     score,
     code,
+    quality,
     bestMatch: {
       id: best.id,
       name: best.name,
@@ -155,8 +258,16 @@ function buildResultPayload(score, ranked, answersSnapshot){
       name: item.name,
       team: item.team,
       typeName: item.typeName,
-      fit: Math.max(56, Math.round(100 - item.distance * 0.9))
+      fit: Math.round(100 - item.distance * 0.9)
     }))
+  };
+}
+function buildAnswerExportPayload(answersSnapshot){
+  return {
+    schema: "gfti-answers-v1",
+    exportedAt: new Date().toISOString(),
+    answerCount: answersSnapshot.filter(v => v !== undefined).length,
+    answers: answersSnapshot
   };
 }
 function applyResultPayload(payload){
@@ -181,13 +292,20 @@ function applyResultPayload(payload){
   document.getElementById('topMatches').innerHTML = (payload.topMatches || []).map((item, idx) => {
     return `<div class="match-row"><span class="tag">#${idx+1}</span><div><strong>${item.name}</strong><div class="mini">${item.typeName} · ${item.team}</div></div><strong>${item.fit}%</strong></div>`;
   }).join('');
+  if (resultWarning) {
+    const warningText = payload.quality?.warning ? payload.quality.message : "";
+    resultWarning.hidden = !warningText;
+    resultWarning.textContent = warningText;
+  }
   latestResult = payload;
   try { localStorage.setItem("gfti_latest_result", JSON.stringify(payload)); } catch(e) {}
 }
 function showResult(){
-  const score = calcScore();
+  const details = calcScoreDetails(answers.slice());
+  const score = details.score;
   const ranked = rankMatches(score);
-  const payload = buildResultPayload(score, ranked, answers.slice());
+  const quality = evaluateResultQuality(score, details.normalized, ranked, details.answerPattern);
+  const payload = buildResultPayload(score, ranked, answers.slice(), quality);
   applyResultPayload(payload);
 }
 function downloadJSON(filename, obj){
@@ -199,19 +317,85 @@ function downloadJSON(filename, obj){
   a.click();
   URL.revokeObjectURL(url);
 }
+function buildExportTimestamp(date = new Date()){
+  const pad = (value) => String(value).padStart(2, "0");
+  return `${date.getFullYear()}${pad(date.getMonth() + 1)}${pad(date.getDate())}${pad(date.getHours())}${pad(date.getMinutes())}`;
+}
+function normalizeCaptureDetails(cloneRoot, cloneDocument){
+  cloneRoot.querySelectorAll("details").forEach((detailsNode) => {
+    const summaryNode = detailsNode.querySelector("summary");
+    const replacement = cloneDocument.createElement("div");
+    replacement.style.marginTop = detailsNode.style.marginTop || "16px";
+    replacement.style.padding = "12px 14px";
+    replacement.style.border = "1px solid rgba(255,255,255,.08)";
+    replacement.style.borderRadius = "14px";
+    replacement.style.background = "rgba(255,255,255,.025)";
+
+    if (summaryNode) {
+      const title = cloneDocument.createElement("div");
+      title.textContent = summaryNode.textContent || "";
+      title.style.marginBottom = "10px";
+      title.style.fontWeight = "700";
+      title.style.color = "var(--text)";
+      replacement.appendChild(title);
+    }
+
+    Array.from(detailsNode.children).forEach((child) => {
+      if (child.tagName === "SUMMARY") return;
+      replacement.appendChild(child.cloneNode(true));
+    });
+
+    detailsNode.replaceWith(replacement);
+  });
+}
+async function downloadResultImage(){
+  if (!window.html2canvas || !latestResult) return;
+  const captureTarget = resultView;
+  const originalText = downloadImageBtn?.textContent;
+  if (downloadImageBtn) {
+    downloadImageBtn.disabled = true;
+    downloadImageBtn.textContent = "生成图片中...";
+  }
+  try {
+    const canvas = await window.html2canvas(captureTarget, {
+      backgroundColor: "#0b1020",
+      scale: Math.min(window.devicePixelRatio || 1, 2),
+      useCORS: true,
+      onclone: (clonedDocument) => {
+        const clonedRoot = clonedDocument.getElementById("resultView");
+        if (!clonedRoot) return;
+        normalizeCaptureDetails(clonedRoot, clonedDocument);
+      }
+    });
+    const link = document.createElement("a");
+    link.href = canvas.toDataURL("image/png");
+    link.download = `GFTI-${buildExportTimestamp()}.png`;
+    link.click();
+  } catch (err) {
+    alert("下载失败：截图生成未完成，请重试。");
+  } finally {
+    if (downloadImageBtn) {
+      downloadImageBtn.disabled = false;
+      downloadImageBtn.textContent = originalText || "下载分析结果";
+    }
+  }
+}
 function importResultFromFile(file){
   const reader = new FileReader();
   reader.onload = () => {
     try {
       const payload = JSON.parse(reader.result);
-      if (!payload || payload.schema !== "gfti-result-v1" || !payload.score || !payload.bestMatch) {
+      const importedAnswers = Array.isArray(payload?.answers) ? payload.answers : null;
+      const isAnswerExport = payload?.schema === "gfti-answers-v1";
+      const isLegacyResultExport = payload?.schema === "gfti-result-v1";
+      if ((!isAnswerExport && !isLegacyResultExport) || !importedAnswers) {
         throw new Error("invalid schema");
       }
-      answers = Array.isArray(payload.answers) ? payload.answers : [];
+      answers = importedAnswers;
       current = 0;
-      applyResultPayload(payload);
+      showResult();
     } catch (err) {
-      alert("导入失败：这不是可识别的 GFTI 结果 JSON。");
+      alert("导入失败：这不是可识别的 GFTI 答题记录 JSON。");
     }
   };
   reader.readAsText(file, "utf-8");
@@ -237,9 +421,11 @@ retryBtn.addEventListener('click', () => {
 });
 if (exportBtn) exportBtn.addEventListener('click', () => {
   if (!latestResult) return;
-  const name = `${latestResult.bestMatch?.name || 'gfti'}-${latestResult.code || 'result'}.json`;
-  downloadJSON(name, latestResult);
+  const payload = buildAnswerExportPayload(answers.slice());
+  const name = `GFTI-${buildExportTimestamp()}.json`;
+  downloadJSON(name, payload);
 });
+if (downloadImageBtn) downloadImageBtn.addEventListener('click', downloadResultImage);
 if (importBtn) importBtn.addEventListener('click', () => importInput.click());
 if (importBtnResult) importBtnResult.addEventListener('click', () => importInput.click());
 if (importInput) importInput.addEventListener('change', (e) => {

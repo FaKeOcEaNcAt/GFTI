@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GFTI / GFTI-Full · Girls' Frontline Type Indicator</title>
+  <title>GFTI · Girls' Frontline Type Indicator</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
@@ -22,7 +22,6 @@
       </div>
       <div class="meta">
         <span>热门人形：<strong id="popularCount">0</strong></span>
-        <span>Full模板：<strong id="fullCount">0</strong></span>
         <span>部署方式：GitHub Pages</span>
       </div>
     </div>
@@ -35,8 +34,8 @@
       </div>
       <div class="grid intro-grid">
         <article class="card">
-          <h3>GFTI 四码</h3>
-          <p>站点使用四码作为可传播标签，底层由 7 个连续维度映射而来。</p>
+          <h3>GFTI 结果标签</h3>
+          <p>站点使用四位缩写作为结果标签，底层由 7 个连续维度映射而来，用来快速概括角色或玩家的整体倾向。</p>
           <ul>
             <li><strong>首位：</strong>C 主导 / O 外显 / R 保留 / F 冲击</li>
             <li><strong>第二位：</strong>D 纪律 / A 适应 / R 保守 / V 变量</li>
@@ -45,7 +44,7 @@
           </ul>
         </article>
         <article class="card">
-          <h3>GFTI-Full 七维</h3>
+          <h3>七维指标</h3>
           <ul>
             <li>指挥性 Command</li>
             <li>保留度 Reserve</li>
@@ -97,36 +96,13 @@
       </div>
     </section>
 
-    <section class="panel">
-      <div class="panel-head">
-        <h2>GFTI-Full 模板</h2>
-      </div>
-      <p class="muted">
-        这里放的是可继续补数的全量量表模板。当前已预置热门与高可见人形的名称骨架，
-        你可以直接编辑 <code>data/gfti-full-template.json</code> 继续扩充。
-      </p>
-      <div class="table-wrap">
-        <table id="fullTable">
-          <thead>
-            <tr>
-              <th>人形</th>
-              <th>GFTI</th>
-              <th>类型名</th>
-              <th>备注</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </section>
   </main>
 
   <footer class="footer wrap">
-    <p>GFTI / GFTI-Full · Fan-made taxonomy for Girls' Frontline dolls.</p>
+    <p>GFTI · Fan-made taxonomy for Girls' Frontline dolls.</p>
   </footer>
 
   <script src="./data/popular.js"></script>
-  <script src="./data/full-template.js"></script>
   <script src="./app.js"></script>
 </body>
 </html>

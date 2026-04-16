@@ -1,7 +1,7 @@
 const GFTI_MATCH_POOL = [
   {
-    "id": "hk416",
-    "name": "HK416",
+    "id": "hk416_gf1",
+    "name": "HK416（少前1）",
     "team": "404小队",
     "weaponClass": "AR",
     "rarity": 5,
@@ -40,11 +40,98 @@ const GFTI_MATCH_POOL = [
         "title": "追放侧可见对应名",
         "source": "gf2bwiki"
       }
-    ]
+    ],
+    "canonicalName": "HK416",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "萌娘百科（少前1条目）",
+        "url": "https://mzh.moegirl.org.cn/%E5%B0%91%E5%A5%B3%E5%89%8D%E7%BA%BF",
+        "license": "CC BY-NC-SA 3.0 CN（站点原文依站内说明）",
+        "priority": 2
+      },
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      },
+      {
+        "label": "少前2追放官方Wiki/官方社区索引",
+        "url": "https://gf2-bbs.exiliumgf.com/wiki/category",
+        "license": "官方站点内容，权利归原作/运营方",
+        "priority": 0
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
-    "id": "ump45",
-    "name": "UMP45",
+    "id": "klukai_gf2",
+    "name": "可露凯（追放）",
+    "canonicalName": "Klukai",
+    "team": "H.I.D.E.404",
+    "weaponClass": "AR",
+    "rarity": 6,
+    "code": "CADT",
+    "typeName": "冷锋队长",
+    "headline": "更成熟的主导、压低外露锋芒，但责任与控制欲更强",
+    "summary": "相较少前1时期，指挥位意识和整体掌控感更稳定，依旧锋利，但更像会背起整支队伍的队长。",
+    "quote": "她仍旧不好亲近，但已经不是只证明自己的人。",
+    "scores": {
+      "command": 92,
+      "reserve": 84,
+      "discipline": 90,
+      "adaptation": 78,
+      "warmth": 42,
+      "teamTrust": 83,
+      "volatility": 30
+    },
+    "basis": [
+      "IOP Wiki显示 Klukai 是《追放》可玩角色，对应少前1的 HK416。",
+      "《追放》剧情概述中她已成为 404 当前行动核心之一，且在行动中更强调带队与收束局面。",
+      "相较少前1的强烈自证，她在《追放》更像把锋芒转化为领导压强。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Klukai - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Klukai",
+        "kind": "角色页"
+      },
+      {
+        "label": "GFL2 Story Summary - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/GFL2_Story/Summary",
+        "kind": "剧情概述"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "HK416",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "ump45_gf1",
+    "name": "UMP45（少前1）",
     "team": "404小队",
     "weaponClass": "SMG",
     "rarity": 4,
@@ -81,11 +168,92 @@ const GFTI_MATCH_POOL = [
         "title": "追放侧可见对应名",
         "source": "gf2bwiki"
       }
-    ]
+    ],
+    "canonicalName": "UMP45",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      },
+      {
+        "label": "少前2追放官方Wiki/官方社区索引",
+        "url": "https://gf2-bbs.exiliumgf.com/wiki/category",
+        "license": "官方站点内容，权利归原作/运营方",
+        "priority": 0
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
-    "id": "ump9",
-    "name": "UMP9",
+    "id": "leva_gf2",
+    "name": "莱娅（追放）",
+    "canonicalName": "Leva",
+    "team": "H.I.D.E.404",
+    "weaponClass": "SMG",
+    "rarity": 6,
+    "code": "CART",
+    "typeName": "暗域统筹者",
+    "headline": "仍是高操盘与高保留，但比少前1时期更稳定、更像正式领队",
+    "summary": "仍擅长掌控人与局，但《追放》里的她更像有长期经营意识的队伍中枢，而不只是黑活专家。",
+    "quote": "她看起来依旧散漫，但现在更像在管理一整支404。",
+    "scores": {
+      "command": 93,
+      "reserve": 89,
+      "discipline": 78,
+      "adaptation": 92,
+      "warmth": 44,
+      "teamTrust": 85,
+      "volatility": 29
+    },
+    "basis": [
+      "IOP Wiki显示 Leva 是《追放》可玩角色，对应少前1的 UMP45。",
+      "少前2剧情概述里，Leva 继续主导 404 行动并推动任务分工。",
+      "与少前1相比，她的“控局”从求生型黑箱操作，更偏向成熟的长期调度。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Leva - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Leva",
+        "kind": "角色页"
+      },
+      {
+        "label": "UMP45 - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/UMP45",
+        "kind": "对应关系"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "UMP45",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "ump9_gf1",
+    "name": "UMP9（少前1）",
     "team": "404小队",
     "weaponClass": "SMG",
     "rarity": 4,
@@ -112,8 +280,8 @@ const GFTI_MATCH_POOL = [
     ],
     "aliases": [
       {
-        "value": "莱妮",
-        "source": "gf2bwiki",
+        "value": "莱娜",
+        "source": "iopwiki",
         "kind": "追放现名"
       }
     ],
@@ -122,11 +290,92 @@ const GFTI_MATCH_POOL = [
         "title": "追放侧可见对应名",
         "source": "gf2bwiki"
       }
-    ]
+    ],
+    "canonicalName": "UMP9",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      },
+      {
+        "label": "少前2追放官方Wiki/官方社区索引",
+        "url": "https://gf2-bbs.exiliumgf.com/wiki/category",
+        "license": "官方站点内容，权利归原作/运营方",
+        "priority": 0
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
-    "id": "g11",
-    "name": "G11",
+    "id": "lenna_gf2",
+    "name": "莱娜（追放）",
+    "canonicalName": "Lenna",
+    "team": "H.I.D.E.404",
+    "weaponClass": "SMG",
+    "rarity": 6,
+    "code": "OART",
+    "typeName": "暖场支点",
+    "headline": "外显与亲和依旧高，但少了早期轻飘感，多了陪跑与托底感",
+    "summary": "还是404里最容易靠近的那一个，但《追放》里的她更像会主动托底和照看队友情绪的支点。",
+    "quote": "她仍旧明亮，只是现在的明亮更像在照别人。",
+    "scores": {
+      "command": 58,
+      "reserve": 28,
+      "discipline": 64,
+      "adaptation": 84,
+      "warmth": 89,
+      "teamTrust": 91,
+      "volatility": 49
+    },
+    "basis": [
+      "IOP Wiki显示 Lenna 是《追放》可玩角色，对应少前1的 UMP9。",
+      "《追放》里的她仍保有亲和和活跃感，但在队伍内承担更多缓冲与维系作用。",
+      "相比少前1的气氛担当，她在《追放》显得更成熟。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Lenna - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Lenna",
+        "kind": "角色页"
+      },
+      {
+        "label": "UMP9 - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/UMP9",
+        "kind": "对应关系"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "UMP9",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "g11_gf1",
+    "name": "G11（少前1）",
     "team": "404小队",
     "weaponClass": "AR",
     "rarity": 5,
@@ -163,7 +412,88 @@ const GFTI_MATCH_POOL = [
         "title": "追放侧可见对应名",
         "source": "gf2bwiki"
       }
-    ]
+    ],
+    "canonicalName": "G11",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      },
+      {
+        "label": "少前2追放官方Wiki/官方社区索引",
+        "url": "https://gf2-bbs.exiliumgf.com/wiki/category",
+        "license": "官方站点内容，权利归原作/运营方",
+        "priority": 0
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "mechty_gf2",
+    "name": "米什缇（追放）",
+    "canonicalName": "Mechty",
+    "team": "H.I.D.E.404",
+    "weaponClass": "AR",
+    "rarity": 6,
+    "code": "RAST",
+    "typeName": "迟缓校准者",
+    "headline": "低外放依旧，但少前2更强调训练、校准与功能恢复后的稳态执行",
+    "summary": "懒散感仍在，不过在《追放》里她更像一名正在被重新校准与重新纳入队伍节奏的执行者。",
+    "quote": "她还是慢半拍，但已经开始把自己重新接回队伍。",
+    "scores": {
+      "command": 39,
+      "reserve": 81,
+      "discipline": 71,
+      "adaptation": 63,
+      "warmth": 54,
+      "teamTrust": 76,
+      "volatility": 22
+    },
+    "basis": [
+      "IOP Wiki显示 Mechty 是《追放》可玩角色，对应少前1的 G11。",
+      "《追放》剧情概述提到 Klukai 会强制她进行训练与校准，说明其角色状态与少前1不同。",
+      "因此她的稳态执行仍强，但队伍连结感和功能恢复色彩更明显。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Mechty - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Mechty",
+        "kind": "角色页"
+      },
+      {
+        "label": "GFL2 Story Summary - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/GFL2_Story/Summary",
+        "kind": "剧情概述"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "G11",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "m4a1",
@@ -190,7 +520,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "M4A1",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "st_ar15",
@@ -218,7 +568,33 @@ const GFTI_MATCH_POOL = [
     "sources": [
       "moegirl",
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "ST AR-15",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "萌娘百科（少前1条目）",
+        "url": "https://mzh.moegirl.org.cn/%E5%B0%91%E5%A5%B3%E5%89%8D%E7%BA%BF",
+        "license": "CC BY-NC-SA 3.0 CN（站点原文依站内说明）",
+        "priority": 2
+      },
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "sopmod2",
@@ -245,7 +621,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "M4 SOPMOD II",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "m16a1",
@@ -273,7 +669,33 @@ const GFTI_MATCH_POOL = [
     "sources": [
       "moegirl",
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "M16A1",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "萌娘百科（少前1条目）",
+        "url": "https://mzh.moegirl.org.cn/%E5%B0%91%E5%A5%B3%E5%89%8D%E7%BA%BF",
+        "license": "CC BY-NC-SA 3.0 CN（站点原文依站内说明）",
+        "priority": 2
+      },
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "ro635",
@@ -300,7 +722,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "RO635",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "ak12",
@@ -327,11 +769,31 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "AK-12",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
-    "id": "an94",
-    "name": "AN-94",
+    "id": "an94_gf1",
+    "name": "AN-94（少前1）",
     "team": "忤逆/DEFY",
     "weaponClass": "AR",
     "rarity": 5,
@@ -358,8 +820,8 @@ const GFTI_MATCH_POOL = [
     ],
     "aliases": [
       {
-        "value": "埃芙",
-        "source": "gf2bwiki",
+        "value": "阿尔瓦",
+        "source": "iopwiki",
         "kind": "追放现名"
       }
     ],
@@ -368,11 +830,92 @@ const GFTI_MATCH_POOL = [
         "title": "追放侧可见对应名",
         "source": "gf2bwiki"
       }
-    ]
+    ],
+    "canonicalName": "AN-94",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      },
+      {
+        "label": "少前2追放官方Wiki/官方社区索引",
+        "url": "https://gf2-bbs.exiliumgf.com/wiki/category",
+        "license": "官方站点内容，权利归原作/运营方",
+        "priority": 0
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
-    "id": "ak15",
-    "name": "AK-15",
+    "id": "alva_gf2",
+    "name": "阿尔瓦（追放）",
+    "canonicalName": "Alva",
+    "team": "忤逆/DEFY",
+    "weaponClass": "AR",
+    "rarity": 6,
+    "code": "CRDS",
+    "typeName": "霜线执行者",
+    "headline": "依旧克制沉静，但在少前2更像完成自我整合后的高纯度执行位",
+    "summary": "和少前1相比，她在《追放》更少“跟随某人的阴影”，更像独立成立的冷静骨干。",
+    "quote": "她的安静不再只是服从，更像自己选定的站位。",
+    "scores": {
+      "command": 67,
+      "reserve": 88,
+      "discipline": 95,
+      "adaptation": 67,
+      "warmth": 36,
+      "teamTrust": 78,
+      "volatility": 16
+    },
+    "basis": [
+      "IOP Wiki显示 Alva 是《追放》可玩角色，对应少前1的 AN-94。",
+      "IOP 列表将 Alva 归入独立后的 DEFY，说明其在队伍角色上比少前1更独立。",
+      "因此她保留高纪律高保留，同时适度上调主导与队伍信任。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Alva - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Alva",
+        "kind": "角色页"
+      },
+      {
+        "label": "List of Characters - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/List_of_Characters",
+        "kind": "阵营/对应"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "AN-94",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "ak15_gf1",
+    "name": "AK-15（少前1）",
     "team": "忤逆/DEFY",
     "weaponClass": "AR",
     "rarity": 5,
@@ -409,7 +952,83 @@ const GFTI_MATCH_POOL = [
         "title": "追放侧可见对应名",
         "source": "gf2bwiki"
       }
-    ]
+    ],
+    "canonicalName": "AK-15",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      },
+      {
+        "label": "少前2追放官方Wiki/官方社区索引",
+        "url": "https://gf2-bbs.exiliumgf.com/wiki/category",
+        "license": "官方站点内容，权利归原作/运营方",
+        "priority": 0
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "voymastina_gf2",
+    "name": "威玛西娜（追放）",
+    "canonicalName": "Voymastina",
+    "team": "忤逆/DEFY",
+    "weaponClass": "AR",
+    "rarity": 6,
+    "code": "FDAS",
+    "typeName": "正面破城锤",
+    "headline": "仍是高压正面位，但比少前1更成熟，稳定性和护队意识略升",
+    "summary": "仍旧是靠结果和压制说话的人，不过《追放》里的她比过去更像值得依靠的“正面锚点”。",
+    "quote": "她还是会直接顶上去，只是现在更知道为谁顶。",
+    "scores": {
+      "command": 78,
+      "reserve": 63,
+      "discipline": 87,
+      "adaptation": 66,
+      "warmth": 38,
+      "teamTrust": 77,
+      "volatility": 34
+    },
+    "basis": [
+      "IOP Wiki显示 Voymastina 是《追放》可玩角色，对应少前1的 AK-15。",
+      "独立后的 DEFY 延续了其强攻定位，但在团队结构中更像稳定前线。",
+      "因此保留高冲击与高纪律，同时略提高队伍信任。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Voymastina - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Voymastina",
+        "kind": "角色页"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "AK-15",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "rpk16",
@@ -436,11 +1055,31 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "RPK-16",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
-    "id": "g36",
-    "name": "G36",
+    "id": "g36_gf1",
+    "name": "G36（少前1）",
     "team": "格里芬",
     "weaponClass": "AR",
     "rarity": 4,
@@ -463,7 +1102,84 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "G36",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "aliases": [
+      {
+        "value": "Centaureissi",
+        "source": "iopwiki",
+        "kind": "追放现名"
+      }
+    ],
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "centaureissi_gf2",
+    "name": "Centaureissi（追放）",
+    "canonicalName": "Centaureissi",
+    "team": "Zucchero Café",
+    "weaponClass": "AR",
+    "rarity": 6,
+    "code": "CDAT",
+    "typeName": "规整执事长",
+    "headline": "秩序与照料依旧高，但比少前1更像有主见的成熟职业人",
+    "summary": "她依然可靠，但《追放》里的她不只是“会照顾人”，还更像能独立运转整套秩序的人。",
+    "quote": "她还是会把一切整理妥当，只是现在更像她自己的规则。",
+    "scores": {
+      "command": 68,
+      "reserve": 50,
+      "discipline": 94,
+      "adaptation": 62,
+      "warmth": 84,
+      "teamTrust": 86,
+      "volatility": 15
+    },
+    "basis": [
+      "IOP Wiki显示 Centaureissi (GFL2) 对应少前1 G36。",
+      "G36 在少前1就以照料与秩序感著称；《追放》更强调其成熟职业气质。",
+      "因此略提高主导与稳态。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Centaureissi (GFL2) - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Centaureissi_%28GFL2%29",
+        "kind": "角色页"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "G36",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "g36c",
@@ -490,11 +1206,31 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "G36C",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
-    "id": "wa2000",
-    "name": "WA2000",
+    "id": "wa2000_gf1",
+    "name": "WA2000（少前1）",
     "team": "格里芬",
     "weaponClass": "RF",
     "rarity": 5,
@@ -517,11 +1253,93 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "WA2000",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "aliases": [
+      {
+        "value": "玛绮朵",
+        "source": "iopwiki",
+        "kind": "追放现名"
+      }
+    ],
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
-    "id": "dsr50",
-    "name": "DSR-50",
+    "id": "makiatto_gf2",
+    "name": "玛绮朵（追放）",
+    "canonicalName": "Makiatto",
+    "team": "Zucchero Café",
+    "weaponClass": "RF",
+    "rarity": 6,
+    "code": "CRAS",
+    "typeName": "骄矜慢热体",
+    "headline": "高标准和距离感还在，但少前2更慢热、更有人情味",
+    "summary": "她仍旧带刺，但《追放》里的刺感比少前1柔和一些，更像慢热而不是纯拒人千里。",
+    "quote": "她依旧高标准，只是没那么急着把人挡在门外。",
+    "scores": {
+      "command": 64,
+      "reserve": 79,
+      "discipline": 88,
+      "adaptation": 60,
+      "warmth": 38,
+      "teamTrust": 64,
+      "volatility": 25
+    },
+    "basis": [
+      "IOP Wiki显示 Makiatto 对应少前1 WA2000。",
+      "WA2000/Story 原本就写她冷静专注且骄傲，但不擅长融入群体。",
+      "《追放》版本更适合写成“慢热”而非纯冷感。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Makiatto - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Makiatto",
+        "kind": "角色页"
+      },
+      {
+        "label": "WA2000/Story - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/WA2000/Story",
+        "kind": "故事介绍"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "WA2000",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "dsr50_gf1",
+    "name": "DSR-50（少前1）",
     "team": "格里芬",
     "weaponClass": "RF",
     "rarity": 5,
@@ -558,7 +1376,83 @@ const GFTI_MATCH_POOL = [
         "title": "追放侧可见对应名",
         "source": "gf2bwiki"
       }
-    ]
+    ],
+    "canonicalName": "DSR-50",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      },
+      {
+        "label": "少前2追放官方Wiki/官方社区索引",
+        "url": "https://gf2-bbs.exiliumgf.com/wiki/category",
+        "license": "官方站点内容，权利归原作/运营方",
+        "priority": 0
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "loreley_gf2",
+    "name": "罗蕾莱（追放）",
+    "canonicalName": "Loreley",
+    "team": "独立/追放",
+    "weaponClass": "RF",
+    "rarity": 6,
+    "code": "OAVR",
+    "typeName": "华幕诱引者",
+    "headline": "外显与魅力仍高，但少前2更像会把魅惑感收进功能性的成熟角色",
+    "summary": "她仍旧很会占据场域，不过《追放》里的她比少前1更像有自我边界的成熟危险感。",
+    "quote": "她仍会把空气变成她的主场，只是现在没那么轻浮。",
+    "scores": {
+      "command": 66,
+      "reserve": 24,
+      "discipline": 52,
+      "adaptation": 77,
+      "warmth": 85,
+      "teamTrust": 61,
+      "volatility": 49
+    },
+    "basis": [
+      "IOP Wiki显示 Loreley 是《追放》可玩角色，对应少前1的 DSR-50。",
+      "同一角色在《追放》的表达更偏成熟女性魅力而非单纯暧昧侵入。",
+      "因此略降波动，略升掌控。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Loreley - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Loreley",
+        "kind": "角色页"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "DSR-50",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "ntw20",
@@ -585,7 +1479,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "NTW-20",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "sat8",
@@ -612,7 +1526,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "S.A.T.8",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "mdr",
@@ -639,7 +1573,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "MDR",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "rfb",
@@ -666,7 +1620,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "RFB",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "negev",
@@ -693,7 +1667,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "Negev",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "suomi",
@@ -720,7 +1714,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "索米",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "thompson",
@@ -747,11 +1761,31 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "Thompson",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
-    "id": "vector",
-    "name": "Vector",
+    "id": "vector_gf1",
+    "name": "Vector（少前1）",
     "team": "格里芬",
     "weaponClass": "SMG",
     "rarity": 5,
@@ -788,11 +1822,92 @@ const GFTI_MATCH_POOL = [
         "title": "追放侧可见对应名",
         "source": "gf2bwiki"
       }
-    ]
+    ],
+    "canonicalName": "Vector",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      },
+      {
+        "label": "少前2追放官方Wiki/官方社区索引",
+        "url": "https://gf2-bbs.exiliumgf.com/wiki/category",
+        "license": "官方站点内容，权利归原作/运营方",
+        "priority": 0
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
-    "id": "mp5",
-    "name": "MP5",
+    "id": "vector_gf2",
+    "name": "维克托（追放）",
+    "canonicalName": "Vector",
+    "team": "H.I.D.E.404 / Team B",
+    "weaponClass": "SMG",
+    "rarity": 6,
+    "code": "FAVR",
+    "typeName": "焰心突进者",
+    "headline": "冲动和热量都更明显，是高波动高行动性的队内尖点",
+    "summary": "《追放》里的她把“上头”和“行动力”都推得更满，像一团真正会把局面烧起来的火。",
+    "quote": "她不是不顾后果，她只是总想先把火点起来。",
+    "scores": {
+      "command": 55,
+      "reserve": 18,
+      "discipline": 47,
+      "adaptation": 84,
+      "warmth": 63,
+      "teamTrust": 58,
+      "volatility": 92
+    },
+    "basis": [
+      "IOP Wiki显示 Vector (GFL2) 是《追放》可玩角色，对应少前1的 Vector。",
+      "公开角色简介普遍强调其纵火癖与高活性。",
+      "相比少前1，更适合被放到高波动高外显的极端端点。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Vector (GFL2) - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Vector_%28GFL2%29",
+        "kind": "角色页"
+      },
+      {
+        "label": "GFL2 Story Summary - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/GFL2_Story/Summary",
+        "kind": "剧情概述"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "Vector",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "mp5_gf1",
+    "name": "MP5（少前1）",
     "team": "格里芬",
     "weaponClass": "SMG",
     "rarity": 4,
@@ -815,7 +1930,89 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "MP5",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "aliases": [
+      {
+        "value": "佩里",
+        "source": "iopwiki",
+        "kind": "追放现名"
+      }
+    ],
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "peri_gf2",
+    "name": "佩里（追放）",
+    "canonicalName": "Peri",
+    "team": "独立/追放",
+    "weaponClass": "SMG",
+    "rarity": 6,
+    "code": "OAAT",
+    "typeName": "酷感护卫",
+    "headline": "仍有保护欲，但已从“想证明自己”转向“想活得更酷”",
+    "summary": "少前2的她明显更摆脱了早年的自卑和身高情结，留下的是更主动、更利落的酷感护卫气质。",
+    "quote": "她不再执着于长高，而是开始学着长成自己想要的样子。",
+    "scores": {
+      "command": 61,
+      "reserve": 33,
+      "discipline": 78,
+      "adaptation": 67,
+      "warmth": 79,
+      "teamTrust": 84,
+      "volatility": 29
+    },
+    "basis": [
+      "IOP Wiki显示 Peri 对应少前1 MP5。",
+      "MP5/Story 直接写到她在改名 Peri 后摆脱身高情结，转而追求“cool”。",
+      "因此与少前1版本相比，应提高自主性与适应性。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Peri - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Peri",
+        "kind": "角色页"
+      },
+      {
+        "label": "MP5/Story - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/MP5/Story",
+        "kind": "故事介绍"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "MP5",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "mp7",
@@ -842,11 +2039,31 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "MP7",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
-    "id": "ump40",
-    "name": "UMP40",
+    "id": "ump40_gf1",
+    "name": "UMP40（少前1）",
     "team": "404关联",
     "weaponClass": "SMG",
     "rarity": 4,
@@ -869,7 +2086,89 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "UMP40",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "aliases": [
+      {
+        "value": "莱妮",
+        "source": "iopwiki",
+        "kind": "追放现名"
+      }
+    ],
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "lainie_gf2",
+    "name": "莱妮（追放）",
+    "canonicalName": "Lainie",
+    "team": "16LAB",
+    "weaponClass": "SMG",
+    "rarity": 6,
+    "code": "RRVT",
+    "typeName": "残响重生体",
+    "headline": "高度保留、脆弱感和重构感并存，是典型“伤痕式再生”人格",
+    "summary": "她不再只是少前1那种悲剧残响，而是带着残留记忆与自我重建意味的后继人格。",
+    "quote": "她像从一段终点里被重新拼回来的回声。",
+    "scores": {
+      "command": 37,
+      "reserve": 95,
+      "discipline": 58,
+      "adaptation": 41,
+      "warmth": 33,
+      "teamTrust": 39,
+      "volatility": 55
+    },
+    "basis": [
+      "IOP Wiki显示 Lainie 是《追放》可玩角色，对应少前1的 UMP40。",
+      "UMP40/Story 明确说明原版 40 已永久毁灭，Lainie 是后继人格模拟。",
+      "因此她必须与少前1的 UMP40 分开建模。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Lainie - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Lainie",
+        "kind": "角色页"
+      },
+      {
+        "label": "UMP40/Story - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/UMP40/Story",
+        "kind": "版本说明"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "UMP40",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "five-seven",
@@ -896,7 +2195,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "Five-seveN",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "lee-enfield",
@@ -923,7 +2242,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "Lee-Enfield",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "kar98k",
@@ -950,7 +2289,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "Kar98k",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "svd",
@@ -977,7 +2336,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "SVD",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "m950a",
@@ -1004,7 +2383,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "M950A",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "grizzly",
@@ -1031,7 +2430,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "Grizzly MkV",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "contender",
@@ -1058,7 +2477,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "Contender",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "tac50",
@@ -1085,11 +2524,31 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "TAC-50",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
-    "id": "type97",
-    "name": "97式",
+    "id": "type97_gf1",
+    "name": "97式（少前1）",
     "team": "格里芬",
     "weaponClass": "AR",
     "rarity": 5,
@@ -1116,8 +2575,8 @@ const GFTI_MATCH_POOL = [
     ],
     "aliases": [
       {
-        "value": "秋桦",
-        "source": "gf2bwiki",
+        "value": "绛雨",
+        "source": "iopwiki",
         "kind": "追放现名"
       }
     ],
@@ -1126,7 +2585,88 @@ const GFTI_MATCH_POOL = [
         "title": "追放侧可见对应名",
         "source": "gf2bwiki"
       }
-    ]
+    ],
+    "canonicalName": "97式",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      },
+      {
+        "label": "少前2追放官方Wiki/官方社区索引",
+        "url": "https://gf2-bbs.exiliumgf.com/wiki/category",
+        "license": "官方站点内容，权利归原作/运营方",
+        "priority": 0
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "jiangyu_gf2",
+    "name": "绛雨（追放）",
+    "canonicalName": "Jiangyu",
+    "team": "Monsoon Squad",
+    "weaponClass": "AR",
+    "rarity": 6,
+    "code": "OAFR",
+    "typeName": "直感舞锋",
+    "headline": "更任性、更爱抢先一步，情绪与行动都走在前面",
+    "summary": "《追放》里的她明显更有舞台感和抢节奏的倾向，像把冲劲、表现欲和热量都推到了台前。",
+    "quote": "她不是没看计划，只是更相信自己先上去能解决。",
+    "scores": {
+      "command": 56,
+      "reserve": 21,
+      "discipline": 48,
+      "adaptation": 76,
+      "warmth": 74,
+      "teamTrust": 58,
+      "volatility": 83
+    },
+    "basis": [
+      "IOP Wiki显示 Jiangyu (GFL2) 对应少前1的 Type 97。",
+      "Jiangyu 的 Profile 片段表现出“先冲进去救人”的直行动机与较强情绪性。",
+      "因此相较少前1的温柔系姐姐感，《追放》里的她更适合高外显高波动。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Jiangyu (GFL2) - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Jiangyu_%28GFL2%29",
+        "kind": "角色页"
+      },
+      {
+        "label": "Jiangyu Profile - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Jiangyu_%28GFL2%29/Profile",
+        "kind": "档案片段"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "97式",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "g41",
@@ -1153,11 +2693,31 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "G41",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
-    "id": "k2",
-    "name": "K2",
+    "id": "k2_gf1",
+    "name": "K2（少前1）",
     "team": "格里芬",
     "weaponClass": "AR",
     "rarity": 5,
@@ -1185,7 +2745,7 @@ const GFTI_MATCH_POOL = [
     "aliases": [
       {
         "value": "幼熙",
-        "source": "gf2bwiki",
+        "source": "iopwiki",
         "kind": "追放现名"
       }
     ],
@@ -1194,7 +2754,88 @@ const GFTI_MATCH_POOL = [
         "title": "追放侧可见对应名",
         "source": "gf2bwiki"
       }
-    ]
+    ],
+    "canonicalName": "K2",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      },
+      {
+        "label": "少前2追放官方Wiki/官方社区索引",
+        "url": "https://gf2-bbs.exiliumgf.com/wiki/category",
+        "license": "官方站点内容，权利归原作/运营方",
+        "priority": 0
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "yoohee_gf2",
+    "name": "幼熙（追放）",
+    "canonicalName": "Yoohee",
+    "team": "Sparkle Squad",
+    "weaponClass": "AR",
+    "rarity": 6,
+    "code": "OAVT",
+    "typeName": "舞台锋芒体",
+    "headline": "外显与表现欲显著升高，但冷静底色并未消失",
+    "summary": "她把少前1时期的锋利和自信转成了舞台人格：更会表演、更会控场，也更习惯被看见。",
+    "quote": "她依旧锋利，只是现在把锋利做成了聚光灯。",
+    "scores": {
+      "command": 70,
+      "reserve": 34,
+      "discipline": 58,
+      "adaptation": 86,
+      "warmth": 57,
+      "teamTrust": 52,
+      "volatility": 78
+    },
+    "basis": [
+      "IOP Wiki显示 Yoohee 对应少前1的 K2。",
+      "K2/Story 里官方描述她外向但仍保持冷静，并有前辈式照看后辈的一面。",
+      "因此《追放》的她应比少前1更外显，但不应写成纯躁动型。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Yoohee - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Yoohee",
+        "kind": "角色页"
+      },
+      {
+        "label": "K2/Story - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/K2/Story",
+        "kind": "官方描述摘录"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "K2",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "k11",
@@ -1221,7 +2862,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "K11",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "aug",
@@ -1248,7 +2909,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "AUG",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "fnfal",
@@ -1275,7 +2956,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "FN FAL",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "fnc",
@@ -1302,7 +3003,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "FNC",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "m14",
@@ -1329,11 +3050,31 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "M14",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
-    "id": "springfield",
-    "name": "Springfield",
+    "id": "springfield_gf1",
+    "name": "Springfield（少前1）",
     "team": "格里芬",
     "weaponClass": "RF",
     "rarity": 4,
@@ -1370,7 +3111,88 @@ const GFTI_MATCH_POOL = [
         "title": "追放侧可见对应名",
         "source": "gf2bwiki"
       }
-    ]
+    ],
+    "canonicalName": "Springfield",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      },
+      {
+        "label": "少前2追放官方Wiki/官方社区索引",
+        "url": "https://gf2-bbs.exiliumgf.com/wiki/category",
+        "license": "官方站点内容，权利归原作/运营方",
+        "priority": 0
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "springfield_gf2",
+    "name": "Springfield（追放）",
+    "canonicalName": "Springfield",
+    "team": "Zucchero Café",
+    "weaponClass": "RF",
+    "rarity": 6,
+    "code": "ODAT",
+    "typeName": "柔光主理人",
+    "headline": "仍温柔周到，但少前2更像把照料欲变成了成熟的经营与安定感",
+    "summary": "她从“家务系温柔”进化成更成熟的主理人气质，依旧能让人放松，但分寸和节奏更老练。",
+    "quote": "她还是会照顾你，只是现在更像一间店、一张桌和一整段秩序。",
+    "scores": {
+      "command": 66,
+      "reserve": 45,
+      "discipline": 86,
+      "adaptation": 63,
+      "warmth": 92,
+      "teamTrust": 88,
+      "volatility": 16
+    },
+    "basis": [
+      "IOP Wiki显示 Springfield (GFL2) 是《追放》可玩角色，对应少前1的 Springfield。",
+      "GFL2 事件页显示她与 Faye、Peri 一同在 Zucchero Café 事件中登场。",
+      "少前1就有“kind personality / Mom-field”的玩家共识，因此《追放》侧更像成熟经营者。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Springfield (GFL2) - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Springfield_%28GFL2%29",
+        "kind": "角色页"
+      },
+      {
+        "label": "Mimisbrunnr's Loop - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Mimisbrunnr%27s_Loop",
+        "kind": "事件页"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "Springfield",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "micro-uzi",
@@ -1397,7 +3219,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "Micro Uzi",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "skorpion",
@@ -1424,7 +3266,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "蝎式",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "mosin",
@@ -1451,7 +3313,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "莫辛纳甘",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "ak74m",
@@ -1478,7 +3360,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "AK-74M",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "hk433",
@@ -1505,7 +3407,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "HK433",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "qbu191",
@@ -1532,7 +3454,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "QBU-191",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "p7",
@@ -1559,7 +3501,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "P7",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "m1911",
@@ -1586,7 +3548,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "M1911",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "nagant",
@@ -1613,7 +3595,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "纳甘左轮",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "stechkin",
@@ -1640,7 +3642,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "斯捷奇金",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "makarov",
@@ -1667,7 +3689,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "马卡洛夫",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "p08",
@@ -1694,7 +3736,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "P08",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "ppk",
@@ -1721,7 +3783,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "PPK",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "ots14",
@@ -1748,7 +3830,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "OTs-14",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "ribeyrolles",
@@ -1775,7 +3877,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "Ribeyrolles",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "asval",
@@ -1802,7 +3924,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "AS VAL",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "9a91",
@@ -1829,7 +3971,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "9A-91",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "tar21",
@@ -1856,11 +4018,31 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "TAR-21",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
-    "id": "type95",
-    "name": "95式",
+    "id": "type95_gf1",
+    "name": "95式（少前1）",
     "team": "格里芬",
     "weaponClass": "AR",
     "rarity": 5,
@@ -1883,11 +4065,93 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "95式",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "aliases": [
+      {
+        "value": "黛烟",
+        "source": "iopwiki",
+        "kind": "追放现名"
+      }
+    ],
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
-    "id": "type97",
-    "name": "97式霰",
+    "id": "daiyan_gf2",
+    "name": "黛烟（追放）",
+    "canonicalName": "Daiyan",
+    "team": "Monsoon Squad",
+    "weaponClass": "AR",
+    "rarity": 6,
+    "code": "ODAT",
+    "typeName": "柔韵领舞者",
+    "headline": "温和、体面、会照看队伍节奏，比原版更有舞台与管理气质",
+    "summary": "她保留了温柔底色，但《追放》中的她更像在台前台后都能控住节奏的成熟核心。",
+    "quote": "她不是最响亮的那一个，却常常是把所有拍子稳住的人。",
+    "scores": {
+      "command": 69,
+      "reserve": 47,
+      "discipline": 81,
+      "adaptation": 68,
+      "warmth": 86,
+      "teamTrust": 88,
+      "volatility": 24
+    },
+    "basis": [
+      "IOP Wiki显示 Daiyan (GFL2) 对应少前1 Type 95。",
+      "Dusty Journal 片段显示她在 Monsoon 里承担协调和收束作用。",
+      "因此她更适合写成高温度、高队伍信任的成熟核心。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Daiyan (GFL2) - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Daiyan_%28GFL2%29",
+        "kind": "角色页"
+      },
+      {
+        "label": "Dusty Journal - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Dusty_Journal",
+        "kind": "文本侧记"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "95式",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "type97_gf1",
+    "name": "97式霰（少前1）",
     "team": "格里芬",
     "weaponClass": "SG",
     "rarity": 5,
@@ -1914,8 +4178,8 @@ const GFTI_MATCH_POOL = [
     ],
     "aliases": [
       {
-        "value": "秋桦",
-        "source": "gf2bwiki",
+        "value": "绛雨",
+        "source": "iopwiki",
         "kind": "追放现名"
       }
     ],
@@ -1924,7 +4188,88 @@ const GFTI_MATCH_POOL = [
         "title": "追放侧可见对应名",
         "source": "gf2bwiki"
       }
-    ]
+    ],
+    "canonicalName": "97式霰",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      },
+      {
+        "label": "少前2追放官方Wiki/官方社区索引",
+        "url": "https://gf2-bbs.exiliumgf.com/wiki/category",
+        "license": "官方站点内容，权利归原作/运营方",
+        "priority": 0
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "jiangyu_gf2",
+    "name": "绛雨（追放）",
+    "canonicalName": "Jiangyu",
+    "team": "Monsoon Squad",
+    "weaponClass": "AR",
+    "rarity": 6,
+    "code": "OAFR",
+    "typeName": "直感舞锋",
+    "headline": "更任性、更爱抢先一步，情绪与行动都走在前面",
+    "summary": "《追放》里的她明显更有舞台感和抢节奏的倾向，像把冲劲、表现欲和热量都推到了台前。",
+    "quote": "她不是没看计划，只是更相信自己先上去能解决。",
+    "scores": {
+      "command": 56,
+      "reserve": 21,
+      "discipline": 48,
+      "adaptation": 76,
+      "warmth": 74,
+      "teamTrust": 58,
+      "volatility": 83
+    },
+    "basis": [
+      "IOP Wiki显示 Jiangyu (GFL2) 对应少前1的 Type 97。",
+      "Jiangyu 的 Profile 片段表现出“先冲进去救人”的直行动机与较强情绪性。",
+      "因此相较少前1的温柔系姐姐感，《追放》里的她更适合高外显高波动。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Jiangyu (GFL2) - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Jiangyu_%28GFL2%29",
+        "kind": "角色页"
+      },
+      {
+        "label": "Jiangyu Profile - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Jiangyu_%28GFL2%29/Profile",
+        "kind": "档案片段"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "97式霰",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "cms",
@@ -1951,7 +4296,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "C-MS",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "sr3mp",
@@ -1978,7 +4343,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "SR-3MP",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "pp19",
@@ -2005,7 +4390,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "PP-19",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "p90",
@@ -2032,7 +4437,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "P90",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "aa12",
@@ -2059,7 +4484,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "AA-12",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "saiga12",
@@ -2086,7 +4531,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "Saiga-12",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "spas12",
@@ -2113,7 +4578,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "SPAS-12",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "usas12",
@@ -2140,7 +4625,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "USAS-12",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "ksg",
@@ -2167,7 +4672,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "KSG",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "m870",
@@ -2194,7 +4719,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "M870",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "mg5",
@@ -2221,7 +4766,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "MG5",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "pkp",
@@ -2248,11 +4813,31 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "PKP",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
-    "id": "lewis",
-    "name": "刘易斯",
+    "id": "lewis_gf1",
+    "name": "刘易斯（少前1）",
     "team": "格里芬",
     "weaponClass": "MG",
     "rarity": 5,
@@ -2289,7 +4874,88 @@ const GFTI_MATCH_POOL = [
         "title": "追放侧可见对应名",
         "source": "gf2bwiki"
       }
-    ]
+    ],
+    "canonicalName": "刘易斯",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      },
+      {
+        "label": "少前2追放官方Wiki/官方社区索引",
+        "url": "https://gf2-bbs.exiliumgf.com/wiki/category",
+        "license": "官方站点内容，权利归原作/运营方",
+        "priority": 0
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "lewis_gf2",
+    "name": "刘易斯（追放）",
+    "canonicalName": "Lewis",
+    "team": "16LAB",
+    "weaponClass": "MG",
+    "rarity": 6,
+    "code": "OAVT",
+    "typeName": "玩心发明家",
+    "headline": "更外放、更玩具化、更会主动拉近距离，但整体仍有可靠的技术底盘",
+    "summary": "《追放》里的她把创造力和玩心放到了最前面，像会拿着新玩具冲过来找你试用的发明家。",
+    "quote": "她不是幼稚，而是把创造力做得太有感染力。",
+    "scores": {
+      "command": 52,
+      "reserve": 25,
+      "discipline": 58,
+      "adaptation": 87,
+      "warmth": 86,
+      "teamTrust": 72,
+      "volatility": 66
+    },
+    "basis": [
+      "IOP Wiki显示 Lewis (GFL2) 对应少前1 Lewis。",
+      "Lewis (GFL2)/Quotes 直接表现出玩具设计师与主动邀约互动的高亲和风格。",
+      "因此比少前1版本更外显、更有玩心。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Lewis (GFL2) - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Lewis_%28GFL2%29",
+        "kind": "角色页"
+      },
+      {
+        "label": "Lewis (GFL2)/Quotes - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Lewis_%28GFL2%29/Quotes",
+        "kind": "台词"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "刘易斯",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "m2hb",
@@ -2316,7 +4982,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "M2HB",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "ksvk",
@@ -2343,7 +5029,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "KSVK",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "carcano91",
@@ -2370,7 +5076,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "Carcano M1891",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "carcano9138",
@@ -2397,7 +5123,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "Carcano M91/38",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "js05",
@@ -2424,7 +5170,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "JS05",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "type88",
@@ -2451,7 +5217,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "88式",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "welrod",
@@ -2478,7 +5264,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "Welrod MkII",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "px4",
@@ -2505,7 +5311,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "Px4 Storm",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "python",
@@ -2532,11 +5358,31 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "Python",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
-    "id": "cz75",
-    "name": "CZ75",
+    "id": "cz75_gf1",
+    "name": "CZ75（少前1）",
     "team": "格里芬",
     "weaponClass": "HG",
     "rarity": 5,
@@ -2559,7 +5405,89 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "CZ75",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "aliases": [
+      {
+        "value": "法耶",
+        "source": "iopwiki",
+        "kind": "追放现名"
+      }
+    ],
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
+  },
+  {
+    "id": "faye_gf2",
+    "name": "法耶（追放）",
+    "canonicalName": "Faye",
+    "team": "Monsoon Squad / Zucchero相关",
+    "weaponClass": "HG",
+    "rarity": 6,
+    "code": "CAVT",
+    "typeName": "锐言调度手",
+    "headline": "高判断、高适应、语言锋利但能控节奏",
+    "summary": "她说话更冲，判断更快，像天生适合在热闹队伍里踩刹车和拨方向的人。",
+    "quote": "她不是故意呛人，只是懒得把正确答案说软。",
+    "scores": {
+      "command": 72,
+      "reserve": 58,
+      "discipline": 67,
+      "adaptation": 85,
+      "warmth": 44,
+      "teamTrust": 63,
+      "volatility": 47
+    },
+    "basis": [
+      "IOP Wiki显示 Faye 对应少前1 CZ75。",
+      "Jiangyu Profile 片段里，Faye 会直接阻止队友鲁莽冲入，显示其强判断与刹车位属性。",
+      "因此应比少前1版本更锋利、更像调度手。"
+    ],
+    "sources": [
+      "iopwiki",
+      "gf2bwiki"
+    ],
+    "sourceRefs": [
+      {
+        "label": "Faye - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Faye",
+        "kind": "角色页"
+      },
+      {
+        "label": "Jiangyu Profile - IOP Wiki",
+        "url": "https://iopwiki.com/wiki/Jiangyu_%28GFL2%29/Profile",
+        "kind": "互动片段"
+      }
+    ],
+    "versionTag": "gf2",
+    "workShort": "追放",
+    "counterpartOf": "CZ75",
+    "work": "Girls' Frontline 2: Exilium",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   },
   {
     "id": "deagle",
@@ -2586,7 +5514,27 @@ const GFTI_MATCH_POOL = [
     ],
     "sources": [
       "iopwiki"
-    ]
+    ],
+    "canonicalName": "沙漠之鹰",
+    "versionTag": "gf1",
+    "workShort": "少前1",
+    "work": "Girls' Frontline",
+    "series": "Girls' Frontline",
+    "sourcePriority": [
+      "gf2bwiki",
+      "iopwiki",
+      "moegirl",
+      "bilibili_community"
+    ],
+    "sourceRefs": [
+      {
+        "label": "IOP Wiki",
+        "url": "https://iopwiki.com/wiki/IOP_Wiki",
+        "license": "社区整理；具体页面依站内说明",
+        "priority": 1
+      }
+    ],
+    "copyright": "角色名称、立绘设定与原始文本权利归《少女前线》系列及各原站点权利方所有；本站仅做同人整理与人格量表化映射。"
   }
 ];
 

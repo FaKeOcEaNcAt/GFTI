@@ -43,12 +43,10 @@ const scoreLabels = {
 };
 
 const popularGrid = document.getElementById("popularGrid");
-const fullBody = document.querySelector("#fullTable tbody");
 const searchInput = document.getElementById("searchInput");
 const teamFilter = document.getElementById("teamFilter");
 
 document.getElementById("popularCount").textContent = GFTI_POPULAR.length;
-document.getElementById("fullCount").textContent = GFTI_FULL_TEMPLATE.length;
 
 const teams = [...new Set(GFTI_POPULAR.map(x => x.team))].sort((a,b)=>a.localeCompare(b,'zh-CN'));
 teams.forEach(team => {
@@ -97,17 +95,6 @@ function renderPopular(items) {
   `).join("");
 }
 
-function renderFull(items) {
-  fullBody.innerHTML = items.map(item => `
-    <tr>
-      <td>${item.name}</td>
-      <td>${item.code || "—"}</td>
-      <td>${item.typeName || "待补"}</td>
-      <td>${item.notes || "可继续补录七维与依据"}</td>
-    </tr>
-  `).join("");
-}
-
 function applyFilter() {
   const keyword = searchInput.value.trim().toLowerCase();
   const team = teamFilter.value;
@@ -123,7 +110,6 @@ searchInput.addEventListener("input", applyFilter);
 teamFilter.addEventListener("change", applyFilter);
 
 renderPopular(GFTI_POPULAR);
-renderFull(GFTI_FULL_TEMPLATE);
 
 
 const sourceRegistryNode = document.getElementById("sourceRegistry");
