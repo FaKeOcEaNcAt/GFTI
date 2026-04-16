@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GFTI / GFTI-Full · Girls' Frontline Type Indicator</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Girls' Frontline Type Indicator</span>
+      <h1 class="hero-title">GFTI</h1>
+      <p class="lead">
+        一个基于公开角色描述、剧情印象与人物关系特征整理的
+        <strong>少女前线人形人格映射站点</strong>。
+      </p>
+      <p class="hero-alert">注意！它不是官方设定，也不是严肃心理测量工具</p>
+      <div class="hero-cta">
+        <span class="hero-cta-label">Start Here</span>
+        <a class="hero-cta-button" href="./test.html">进入 GFTI 测试</a>
+      </div>
+      <div class="meta">
+        <span>热门人形：<strong id="popularCount">0</strong></span>
+        <span>Full模板：<strong id="fullCount">0</strong></span>
+        <span>部署方式：GitHub Pages</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="panel">
+      <div class="panel-head">
+        <h2>量表说明</h2>
+      </div>
+      <div class="grid intro-grid">
+        <article class="card">
+          <h3>GFTI 四码</h3>
+          <p>站点使用四码作为可传播标签，底层由 7 个连续维度映射而来。</p>
+          <ul>
+            <li><strong>首位：</strong>C 主导 / O 外显 / R 保留 / F 冲击</li>
+            <li><strong>第二位：</strong>D 纪律 / A 适应 / R 保守 / V 变量</li>
+            <li><strong>第三位：</strong>A 亲和 / C 冷感 / R 理想 / F 爆发</li>
+            <li><strong>第四位：</strong>T 团队 / D 独行 / R 风险 / S 稳态</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>GFTI-Full 七维</h3>
+          <ul>
+            <li>指挥性 Command</li>
+            <li>保留度 Reserve</li>
+            <li>纪律性 Discipline</li>
+            <li>适应性 Adaptation</li>
+            <li>温度感 Warmth</li>
+            <li>队伍信任 Team Trust</li>
+            <li>波动性 Volatility</li>
+          </ul>
+          <p>每项 0–100，越高说明该特征越强。</p>
+        </article>
+        <article class="card">
+          <h3>使用边界</h3>
+          <p>这不是官方人格设定，不代表角色“唯一正确解”；更适合作为二创、设定讨论、同人写作和角色分组的参考底盘。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head panel-row">
+        <h2>热门人形 GFTI</h2>
+        <div class="toolbar">
+          <input id="searchInput" placeholder="搜索人形 / 小队 / 类型名" />
+          <select id="teamFilter">
+            <option value="">全部阵营</option>
+          </select>
+        </div>
+      </div>
+      <div id="popularGrid" class="grid cards"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head"><h2>信源与版权说明</h2></div>
+      <div class="grid intro-grid">
+        <article class="card">
+          <h3>信源范围</h3>
+          <p class="summary">本项目当前主要使用萌娘百科、IOP Wiki 与少前2：追放 BWIKI 的公开页面信息；少女前线 Wiki 与云图计划 Wiki 预留为后续补全来源。</p>
+          <div id="sourceRegistry" class="source-list"></div>
+        </article>
+        <article class="card">
+          <h3>版权与使用边界</h3>
+          <p class="summary">本站的 GFTI 类型、七维评分、人格解读与匹配逻辑均为同人二次整理，不代表官方设定。页面中若引用第三方站点的公开描述，仅用于来源指向与研究性归纳，不整段转载原文。</p>
+          <ul>
+            <li>角色名称、世界观、立绘与官方设定相关权利归原作与相关权利方所有。</li>
+            <li>萌娘百科页面文字内容默认使用 CC BY-NC-SA 3.0 中国大陆，引用时应保留原站标注与协议要求。</li>
+            <li>BWIKI、IOP Wiki、GFwiki、42LAB 云图计划 Wiki 的版权与转载规则以各站点公告为准。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>GFTI-Full 模板</h2>
+      </div>
+      <p class="muted">
+        这里放的是可继续补数的全量量表模板。当前已预置热门与高可见人形的名称骨架，
+        你可以直接编辑 <code>data/gfti-full-template.json</code> 继续扩充。
+      </p>
+      <div class="table-wrap">
+        <table id="fullTable">
+          <thead>
+            <tr>
+              <th>人形</th>
+              <th>GFTI</th>
+              <th>类型名</th>
+              <th>备注</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <p>GFTI / GFTI-Full · Fan-made taxonomy for Girls' Frontline dolls.</p>
+  </footer>
+
+  <script src="./data/popular.js"></script>
+  <script src="./data/full-template.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

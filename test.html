@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GFTI 测试 · 测出你像哪个《少女前线》人形</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap center-panel">
+      <span class="eyebrow">Girls' Frontline Type Indicator</span>
+      <h1>测出你像哪个《少女前线》人形</h1>
+      <p class="lead">完成全部 28 题，获得你的 GFTI 四码、七维人格评分，以及最接近的人形匹配结果。</p>
+      <div class="hero-actions">
+        <a class="button" href="./index.html">返回 GFTI 资料页</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap center-panel">
+    <section id="introView" class="panel">
+      <div class="panel-head"><div class="kicker">GFTI Test</div><h2>开始测试</h2></div>
+      <p class="summary">这是一份同人向人格匹配测评。结果更适合拿来做角色讨论、同人创作和社交分享，不代表官方设定。</p>
+      <div class="grid intro-grid">
+        <article class="card"><h3>题量</h3><p>28 题，约 3–5 分钟。</p></article>
+        <article class="card"><h3>结果</h3><p>输出 1 位主匹配人形、3 位相近人形、1 组 GFTI 四码和七维评分。</p></article>
+        <article class="card"><h3>风格</h3><p>题面更贴近《少女前线》的行动气质与人物关系，但不会直接点出剧情名场面。</p></article>
+      </div>
+      <div class="hero-actions">
+        <button id="startBtn" class="button">开始测试</button>
+        <button id="importBtn" class="button secondary">导入 JSON 结果</button>
+        <input id="importInput" type="file" accept="application/json,.json" hidden />
+      </div>
+    </section>
+
+    <section id="quizView" class="panel" hidden>
+      <div class="panel-head panel-row">
+        <div>
+          <div class="kicker">Question</div>
+          <h2 id="questionText">题目</h2>
+        </div>
+        <div class="mini">已完成 <strong id="progressText">0 / 28</strong> 题</div>
+      </div>
+      <div class="progress"><i id="progressBar" style="width:0%"></i></div>
+      <div id="optionList" class="option-list"></div>
+      <div class="hero-actions"><button id="prevBtn" class="button secondary">上一题</button></div>
+    </section>
+
+    <section id="resultView" class="panel" hidden>
+      <div class="panel-head"><div class="kicker">Result</div><h2>你的 GFTI 测试结果</h2></div>
+      <div class="result-hero">
+        <article class="card">
+          <div class="mini">最接近的人形</div>
+          <h3 id="resultName" class="result-name">HK416</h3>
+          <div class="badges">
+            <span id="resultCode" class="badge">CRAT</span>
+            <span id="resultType" class="badge">冷锐执行者</span>
+            <span id="resultTeam" class="badge">404小队</span>
+          </div>
+          <p id="resultSummary" class="summary"></p>
+          <div id="resultAliases" class="alias-row"></div>
+          <div id="resultSources" class="source-row"></div>
+          <div id="resultScores" class="scores"></div>
+          <div id="resultQuote" class="quote"></div>
+        </article>
+        <article class="card">
+          <h3>人格解读</h3>
+          <p id="profileText" class="summary"></p>
+          <h3 style="margin-top:16px">相近人形</h3>
+          <div id="topMatches" class="top-matches"></div>
+          <details style="margin-top:16px">
+            <summary>匹配依据</summary>
+            <ul id="basisList"></ul>
+          </details>
+          <details style="margin-top:16px">
+            <summary>导出说明</summary>
+            <p class="summary">导出的是本地 JSON 文件，包含你的答案、七维分数、GFTI 四码与匹配结果。之后可以再次导入恢复结果页。</p>
+          </details>
+        </article>
+      </div>
+      <div class="hero-actions">
+        <button id="exportBtn" class="button">导出 JSON 结果</button>
+        <button id="retryBtn" class="button secondary">重新测试</button>
+        <button id="importBtnResult" class="button secondary">导入 JSON</button>
+      </div>
+      <details class="meta-box" style="margin-top:16px">
+        <summary>结果页信源与版权说明</summary>
+        <p class="summary">结果中展示的人形标签、七维评分与匹配解读属于本站同人整理；角色基础设定、索引或别名对照来自公开 Wiki 信源，具体来源会在结果页单独标出。</p>
+      </details>
+    </section>
+  </main>
+
+  <script src="./data/popular.js"></script>
+  <script src="./data/test-data.js"></script>
+  <script src="./test-app.js"></script>
+</body>
+</html>
