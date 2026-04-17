@@ -45,8 +45,12 @@ const scoreLabels = {
 const popularGrid = document.getElementById("popularGrid");
 const searchInput = document.getElementById("searchInput");
 const teamFilter = document.getElementById("teamFilter");
+const heroMetaNote = document.getElementById("heroMetaNote");
 
 document.getElementById("popularCount").textContent = GFTI_POPULAR.length;
+if (heroMetaNote) {
+  heroMetaNote.textContent = `当前已收录 ${GFTI_POPULAR.length} 名热门人形，支持在线测试与结果导出。`;
+}
 
 const teams = [...new Set(GFTI_POPULAR.map(x => x.team))].sort((a,b)=>a.localeCompare(b,'zh-CN'));
 teams.forEach(team => {

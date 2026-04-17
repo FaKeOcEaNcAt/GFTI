@@ -9,20 +9,39 @@
 <body>
   <header class="hero">
     <div class="wrap">
-      <span class="eyebrow">Girls' Frontline Type Indicator</span>
-      <h1 class="hero-title">GFTI</h1>
-      <p class="lead">
-        一个基于公开角色描述、剧情印象与人物关系特征整理的
-        <strong>少女前线人形人格映射站点</strong>。
-      </p>
-      <p class="hero-alert">注意！它不是官方设定，也不是严肃心理测量工具</p>
-      <div class="hero-cta">
-        <span class="hero-cta-label">Start Here</span>
-        <a class="hero-cta-button" href="./test.html">进入 GFTI 测试</a>
-      </div>
-      <div class="meta">
-        <span>热门人形：<strong id="popularCount">0</strong></span>
-        <span>部署方式：GitHub Pages</span>
+      <div class="hero-layout">
+        <div class="hero-main">
+          <span class="eyebrow">Girls' Frontline Type Indicator</span>
+          <h1 class="hero-title">GFTI</h1>
+          <p class="lead">
+            一个基于公开角色描述、剧情印象与人物关系特征整理的
+            <strong>少女前线人形人格映射站点</strong>。
+          </p>
+          <p class="hero-alert">注意！它不是官方设定，也不是严肃心理测量工具</p>
+        </div>
+        <aside class="hero-side">
+          <div class="hero-cta hero-side-card">
+            <span class="hero-cta-label">Start Here</span>
+            <a class="hero-cta-button" href="./test.html">进入 GFTI 测试</a>
+            <p class="hero-cta-note">约 3–5 分钟，支持导出答题记录并按新算法重新计算结果。</p>
+          </div>
+          <div class="hero-side-card hero-meta-card">
+            <div class="hero-meta-head">
+              <span class="hero-meta-kicker">Site Snapshot</span>
+              <p id="heroMetaNote" class="hero-meta-note">正在载入站点数据...</p>
+            </div>
+            <div class="meta hero-meta-grid">
+              <span>
+                <small>热门人形</small>
+                <strong id="popularCount">0</strong>
+              </span>
+              <span>
+                <small>部署方式</small>
+                <strong>GitHub Pages</strong>
+              </span>
+            </div>
+          </div>
+        </aside>
       </div>
     </div>
   </header>
@@ -102,6 +121,7 @@
     <p>GFTI · Fan-made taxonomy for Girls' Frontline dolls.</p>
   </footer>
 
+  <script src="./background-parallax.js"></script>
   <script src="./data/popular.js"></script>
   <script src="./app.js"></script>
 </body>
