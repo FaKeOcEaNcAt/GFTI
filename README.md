@@ -1,5 +1,4 @@
 # 立刻开始测试
-当前版本：Beta 0.2.1
 
 https://fakeoceancat.github.io/GFTI/
 
@@ -95,3 +94,4 @@ Some character information is derived from third-party public sources. Such thir
 - 本项目不是严肃心理测量工具
 - 匹配结果更适合用于角色讨论、社交分享和创作灵感，不适合用于现实人格判断
 - 如有问题，可以在issue区块交流
+
